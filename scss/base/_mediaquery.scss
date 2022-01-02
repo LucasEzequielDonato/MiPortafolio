@@ -1,0 +1,38 @@
+@media only screen and (max-width: 899px) {
+  .headerContenedorPerfil {
+    h1 {
+      margin: 10px 0 0 0;
+      font-size: 30px;
+    }
+    h2,
+    h3 {
+      margin: 10px 0 0 0;
+      font-size: 15px;
+    }
+  }
+  .proyectoImagen {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+  }
+  .proyecto {
+    width: 200px;
+    @extend %contenedorTipo1;
+    color: black;
+    margin: 20px 0px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  h4 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: black;
+  }
+  .conocimietoImagen {
+    width: 75px;
+    height: 75px;
+  }
+}
