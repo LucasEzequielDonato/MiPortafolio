@@ -1,11 +1,28 @@
 @media only screen and (max-width: 899px) {
+  .fotoPerfil {
+    width: 60%;
+    max-width: 200px;
+    border-radius: 1000px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 15px;
+    margin: 20px;
+  }
+  .headerContenedorPerfil {
+    display: block;
+    h1 {
+      margin-top: 0;
+    }
+  }
+  .botonDescargarCV {
+    width: 40%;
+  }
   .proyectoImagen {
     width: 100%;
-    height: 50px;
+    height: 200px;
     border-radius: 25px;
   }
   .proyecto {
-    width: 200px;
+    width: 400px;
     @extend %contenedorTipo1;
     color: black;
     margin: 20px 0px;
