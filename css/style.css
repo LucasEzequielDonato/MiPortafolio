@@ -7,19 +7,24 @@
   text-decoration: none;
   list-style-type: none;
   font-family: "Roboto", sans-serif;
-  overflow: hidden;
-  /* Con esto deshabilito el scroll */
   scroll-behavior: smooth;
 }
 
 .proyecto, .headerContenedorPerfil {
   margin: auto;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 20px;
   border-radius: 50px;
   border: 1px solid black;
   box-shadow: 0px 0px 15px;
+}
+
+.contenedorGeneral {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px 20px;
 }
 
 html {
@@ -54,22 +59,26 @@ header section {
 }
 
 .headerContenedorPerfil {
-  max-width: 600px;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .headerContenedorPerfil img {
-  width: 60%;
+  width: 80%;
   max-width: 300px;
   border-radius: 1000px;
   border: 1px solid black;
   box-shadow: 0px 0px 15px;
+  margin: 20px;
 }
 .headerContenedorPerfil h1 {
-  margin: 10px 0 0 0;
+  margin: 20px 0 20px 0;
   font-size: 50px;
 }
 .headerContenedorPerfil h2,
 .headerContenedorPerfil h3 {
-  margin: 10px 0 0 0;
+  margin: 0 0 20px 0;
   font-size: 20px;
 }
 
@@ -123,7 +132,7 @@ header section {
   background-color: #4646fa;
   padding: 5px 10px;
   border-radius: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .proyectoImagen {
@@ -144,11 +153,6 @@ header section {
 .seccionPrimera section {
   vertical-align: middle;
   display: table-cell;
-}
-
-.contenedorGeneral {
-  background-color: rgba(255, 255, 255, 0.75);
-  padding: 20px 20px;
 }
 
 .portafolioContenedor {
@@ -185,9 +189,37 @@ h6 {
 }
 
 .proyecto {
-  width: 500px;
+  width: 600px;
   color: black;
   margin: 20px 0px;
+}
+
+.proyectoBotones {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.proyectoBotones a button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+.proyectoBotones a button img {
+  width: 35px;
+  padding: 5px;
+}
+.proyectoBotones a button span {
+  padding: 5px;
+}
+
+.btnDemo {
+  background-color: greenyellow;
+}
+
+.btnGitHub {
+  background-color: #0066ff;
 }
 
 .conocimietoImagen {
@@ -259,23 +291,15 @@ h6 {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.contactoContenedor div {
+
+.conocimiento {
   background-color: white;
   border-radius: 100px;
   padding: 15px;
+  box-shadow: 0px 0px 15px;
 }
 
 @media only screen and (max-width: 899px) {
-  .headerContenedorPerfil h1 {
-    margin: 10px 0 0 0;
-    font-size: 30px;
-  }
-  .headerContenedorPerfil h2,
-.headerContenedorPerfil h3 {
-    margin: 10px 0 0 0;
-    font-size: 15px;
-  }
-
   .proyectoImagen {
     width: 100%;
     height: 50px;
