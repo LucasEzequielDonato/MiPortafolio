@@ -1,7 +1,19 @@
 @media only screen and (max-width: 599px) {
+  nav label {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-left: 10px;
+  }
   nav {
+    display: block;
     ul {
+      margin-top: -100%;
+      display: block;
       li {
+        width: 100%;
+        background-color: rgb(158, 255, 255, 0.5);
+        height: 40px;
         a {
           span {
             font-size: 15px;
@@ -9,6 +21,9 @@
         }
       }
     }
+  }
+  #botonMenu:checked ~ ul {
+    margin-top: 0px;
   }
   h4 {
     text-align: center;
@@ -23,6 +38,11 @@
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
+}
+@media only screen and (min-width: 600px) {
+  nav label {
+    display: none;
+  }
 }
 @media only screen and (max-width: 899px) {
   .fotoPerfil {
