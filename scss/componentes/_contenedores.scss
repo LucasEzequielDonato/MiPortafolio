@@ -2,7 +2,7 @@
   margin: auto;
   text-align: center;
   backdrop-filter: blur(5px);
-  background-color: rgba(0, 140, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 20px;
   border-radius: 50px;
   border: 1px solid black;
@@ -12,7 +12,7 @@
   margin: auto;
   text-align: center;
   backdrop-filter: blur(5px);
-  background-color: rgba(255, 196, 0, 0.5);
+  background-color: rgba(0, 102, 255, 0.5);
   padding: 20px;
   border-radius: 50px;
   border: 1px solid black;
@@ -20,6 +20,6 @@
 }
 .contenedorGeneral {
   backdrop-filter: blur(5px);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.75);
   padding: 20px 20px;
 }
