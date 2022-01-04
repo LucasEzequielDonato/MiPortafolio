@@ -10,11 +10,22 @@
   scroll-behavior: smooth;
 }
 
-.proyecto, .headerContenedorPerfil {
+.headerContenedorPerfil {
   margin: auto;
   text-align: center;
   backdrop-filter: blur(5px);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 140, 255, 0.5);
+  padding: 20px;
+  border-radius: 50px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 15px;
+}
+
+.proyecto {
+  margin: auto;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 196, 0, 0.5);
   padding: 20px;
   border-radius: 50px;
   border: 1px solid black;
@@ -46,7 +57,7 @@ body {
 
 .contenedorScrollTop {
   position: absolute;
-  top: 50px;
+  top: 40px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -69,7 +80,7 @@ body {
 
 .contenedorScrollBottom {
   position: absolute;
-  bottom: 50px;
+  bottom: 40px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -137,7 +148,7 @@ header section {
 }
 
 .headerContenedorPerfil {
-  max-width: 700px;
+  max-width: 750px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,11 +157,13 @@ header section {
 .headerContenedorPerfil h1 {
   margin: 20px 0 20px 0;
   font-size: 50px;
+  font-weight: bolder;
 }
 .headerContenedorPerfil h2,
 .headerContenedorPerfil h3 {
   margin: 0 0 20px 0;
   font-size: 20px;
+  font-weight: bolder;
 }
 .headerContenedorPerfil:hover {
   transform: scale(1.03);
@@ -196,6 +209,7 @@ header section {
 }
 .botonDescargarCV span {
   z-index: 2;
+  font-weight: bolder;
 }
 
 .proyectoImagen {
@@ -270,6 +284,7 @@ h6 {
 .proyectoBotones a button span {
   margin: 5px;
   z-index: 2;
+  font-weight: bolder;
 }
 
 .btnDemo {
@@ -339,8 +354,8 @@ h6 {
 }
 
 .conocimietoImagen {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
 
 .seccionSegunda {
@@ -376,6 +391,7 @@ h6 {
 .contactoImagen {
   width: 100px;
   height: 250px;
+  filter: invert(1);
 }
 
 .seccionTres {
@@ -393,8 +409,12 @@ h6 {
 }
 
 .contenedorFooter {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(0, 0, 0, 0.75);
   padding: 20px 0;
+}
+
+.footerTexto {
+  color: gainsboro;
 }
 
 .contactoContenedor {
@@ -419,19 +439,37 @@ h6 {
   transform: scale(1.1);
 }
 
+@media only screen and (max-width: 599px) {
+  h4 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: black;
+  }
+
+  .conocimietoImagen {
+    width: 60px;
+    height: 60px;
+  }
+}
 @media only screen and (max-width: 899px) {
   .fotoPerfil {
-    width: 60%;
-    max-width: 200px;
+    width: 200px;
     border-radius: 1000px;
     border: 1px solid black;
     box-shadow: 0px 0px 15px;
     margin: 20px;
   }
 
+  header section {
+    width: 100%;
+    padding: 0 10px;
+  }
+
   .headerContenedorPerfil {
     display: block;
-    max-width: 400px;
+    max-width: 410px;
   }
   .headerContenedorPerfil h1 {
     margin-top: 0;
@@ -453,18 +491,13 @@ h6 {
     margin: 20px 0px;
   }
 }
-@media only screen and (max-width: 599px) {
-  h4 {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: black;
+@media only screen and (max-height: 699px) {
+  .contenedorScrollTop {
+    top: 20px;
   }
 
-  .conocimietoImagen {
-    width: 75px;
-    height: 75px;
+  .contenedorScrollBottom {
+    bottom: 20px;
   }
 }
 

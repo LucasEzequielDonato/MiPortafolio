@@ -1,6 +1,7 @@
 .contactoImagen {
   width: 100px;
   height: 250px;
+  filter: invert(1);
 }
 .seccionTres {
   padding: 0;
@@ -16,8 +17,11 @@
   }
 }
 .contenedorFooter {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(0, 0, 0, 0.75);
   padding: 20px 0;
+}
+.footerTexto {
+  color: rgb(220, 220, 220);
 }
 .contactoContenedor {
   width: 100%;
