@@ -8,8 +8,8 @@
   nav {
     display: block;
     ul {
-      margin-top: -100%;
       display: block;
+      opacity: 0;
       li {
         width: 100%;
         background-color: rgb(158, 255, 255, 0.5);
@@ -23,7 +23,8 @@
     }
   }
   #botonMenu:checked ~ ul {
-    margin-top: 0px;
+    transition: all ease-in-out 0.25s;
+    opacity: 1;
   }
   h4 {
     text-align: center;

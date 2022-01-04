@@ -449,8 +449,8 @@ h6 {
     display: block;
   }
   nav ul {
-    margin-top: -100%;
     display: block;
+    opacity: 0;
   }
   nav ul li {
     width: 100%;
@@ -462,7 +462,8 @@ h6 {
   }
 
   #botonMenu:checked ~ ul {
-    margin-top: 0px;
+    transition: all ease-in-out 0.25s;
+    opacity: 1;
   }
 
   h4 {
