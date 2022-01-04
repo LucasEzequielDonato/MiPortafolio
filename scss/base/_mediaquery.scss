@@ -12,8 +12,11 @@
       opacity: 0;
       li {
         width: 100%;
-        background-color: rgb(158, 255, 255, 0.5);
         height: 40px;
+        background-color: rgb(158, 255, 255, 0.5);
+        &:hover {
+          background-color: rgb(158, 255, 255, 0.75);
+        }
         a {
           span {
             font-size: 15px;
