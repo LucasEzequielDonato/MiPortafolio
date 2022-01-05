@@ -31,7 +31,15 @@ h4 {
   color: black;
 }
 h5 {
-  margin-bottom: 20px;
+  width: 100%;
+  height: 250px;
+  transition: all 0.5s;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -250px;
+  opacity: 0;
 }
 h6 {
   margin-top: 20px;
@@ -49,6 +57,32 @@ h6 {
   @extend %contenedorTipo2;
   color: black;
   margin: 20px 0px;
+}
+.proyectoContenedor {
+  width: 100%;
+  height: 250px;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+  div {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  &:hover div {
+    opacity: 1;
+  }
+  &:hover div h5 {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 .proyectoBotones {
   display: flex;
