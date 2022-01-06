@@ -257,7 +257,7 @@ h4 {
 h5 {
   width: 100%;
   height: 100%;
-  transition: all 0.25s;
+  transition: all 0.5s;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -274,7 +274,7 @@ h6 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -282,7 +282,6 @@ h6 {
 .proyecto {
   width: 600px;
   color: black;
-  margin: 20px 0px;
 }
 
 .proyectoContenedor {
@@ -302,7 +301,7 @@ h6 {
   align-items: center;
   backdrop-filter: blur(10px);
   opacity: 0;
-  transition: all 0.25s;
+  transition: all 0.5s;
 }
 .proyectoContenedor:hover div {
   opacity: 1;
@@ -562,21 +561,37 @@ h6 {
     width: 60%;
   }
 
-  .proyectoImagen {
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-  }
-
   .proyecto {
     width: 350px;
     color: black;
-    margin: 20px 0px;
   }
 
   .proyectoContenedor {
     width: 100%;
-    height: 200px;
+    height: 150px;
+  }
+
+  .proyectoBotones a button img {
+    width: 30px;
+    margin: 5px;
+    z-index: 2;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1399px) {
+  .proyecto {
+    width: 375px;
+    color: black;
+  }
+
+  .proyectoContenedor {
+    width: 100%;
+    height: 150px;
+  }
+
+  .proyectoBotones a button img {
+    width: 30px;
+    margin: 5px;
+    z-index: 2;
   }
 }
 
