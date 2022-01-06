@@ -8,11 +8,14 @@
     display: block;
     ul {
       display: block;
-      opacity: 0;
+      position: absolute;
+      top: -200px;
       li {
         width: 100%;
         height: 50px;
         background-color: rgb(158, 255, 255, 0.5);
+        opacity: 0;
+        transition: all ease-in-out 0.25s;
         &:hover {
           background-color: rgb(158, 255, 255, 0.75);
         }
@@ -25,7 +28,9 @@
     }
   }
   #botonMenu:checked ~ ul {
-    transition: all ease-in-out 0.25s;
+    top: 50px;
+  }
+  #botonMenu:checked ~ ul li {
     opacity: 1;
   }
   h4 {
@@ -72,13 +77,17 @@
   }
   .proyectoImagen {
     width: 100%;
-    height: 200px;
+    height: 100%;
     border-radius: 25px;
   }
   .proyecto {
     width: 350px;
     color: black;
     margin: 20px 0px;
+  }
+  .proyectoContenedor {
+    width: 100%;
+    height: 200px;
   }
 }
 @media only screen and (min-width: 900px) {

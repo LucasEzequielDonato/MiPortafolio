@@ -220,7 +220,7 @@ header section {
 
 .proyectoImagen {
   width: 100%;
-  height: 250px;
+  height: 100%;
   border-radius: 25px;
 }
 
@@ -256,13 +256,13 @@ h4 {
 
 h5 {
   width: 100%;
-  height: 250px;
-  transition: all 0.5s;
+  height: 100%;
+  transition: all 0.25s;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: -250px;
+  bottom: -100%;
   opacity: 0;
 }
 
@@ -296,13 +296,13 @@ h6 {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 250px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(10px);
   opacity: 0;
-  transition: all 0.5s;
+  transition: all 0.25s;
 }
 .proyectoContenedor:hover div {
   opacity: 1;
@@ -492,12 +492,15 @@ h6 {
   }
   nav ul {
     display: block;
-    opacity: 0;
+    position: absolute;
+    top: -200px;
   }
   nav ul li {
     width: 100%;
     height: 50px;
     background-color: rgba(158, 255, 255, 0.5);
+    opacity: 0;
+    transition: all ease-in-out 0.25s;
   }
   nav ul li:hover {
     background-color: rgba(158, 255, 255, 0.75);
@@ -507,7 +510,10 @@ h6 {
   }
 
   #botonMenu:checked ~ ul {
-    transition: all ease-in-out 0.25s;
+    top: 50px;
+  }
+
+  #botonMenu:checked ~ ul li {
     opacity: 1;
   }
 
@@ -558,7 +564,7 @@ h6 {
 
   .proyectoImagen {
     width: 100%;
-    height: 200px;
+    height: 100%;
     border-radius: 25px;
   }
 
@@ -566,6 +572,11 @@ h6 {
     width: 350px;
     color: black;
     margin: 20px 0px;
+  }
+
+  .proyectoContenedor {
+    width: 100%;
+    height: 200px;
   }
 }
 
