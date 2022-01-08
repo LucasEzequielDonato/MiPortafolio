@@ -33,11 +33,10 @@
 }
 
 .contenedorGeneral {
-  width: 100vw;
+  width: 100%;
   backdrop-filter: blur(5px);
   background-color: rgba(255, 255, 255, 0.75);
   padding: 20px 0;
-  position: relative;
 }
 
 html {
@@ -245,7 +244,7 @@ header section {
 }
 
 .portafolioContenedor {
-  width: 100%;
+  width: calc(100vw - 20px);
   height: 450px;
   padding: 20px;
   margin: 0 auto;
@@ -283,9 +282,10 @@ h6 {
 .proyectos {
   height: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-left: -100%;
-  gap: 60px;
+  gap: 40px;
 }
 
 .proyecto {
@@ -574,15 +574,6 @@ h6 {
 
   .botonIzquierdo {
     right: 10px;
-  }
-}
-@media only screen and (min-width: 600px) and (max-width: 899px) {
-  .botonDerecho {
-    left: 15px;
-  }
-
-  .botonIzquierdo {
-    right: 15px;
   }
 }
 @media only screen and (min-width: 600px) {

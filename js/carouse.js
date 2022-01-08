@@ -40,3 +40,7 @@ botonIzquierdo.addEventListener('click', function(){
 botonDerecho.addEventListener("click", function(){
     Anterior();
 });
+
+setInterval(function(){
+    Siguiente();
+}, 5000);

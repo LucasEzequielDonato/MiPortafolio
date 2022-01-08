@@ -17,7 +17,7 @@
   }
 }
 .portafolioContenedor {
-  width: 100%;
+  width: calc(100vw - 20px);
   height: 450px;
   padding: 20px;
   margin: 0 auto;
@@ -51,9 +51,10 @@ h6 {
 .proyectos {
   height: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-left: -100%;
-  gap: 60px;
+  gap: 40px;
 }
 .proyecto {
   width: 600px;
