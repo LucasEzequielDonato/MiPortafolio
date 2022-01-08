@@ -22,7 +22,7 @@
 }
 
 .proyecto {
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   backdrop-filter: blur(5px);
   background-color: rgba(0, 102, 255, 0.5);
@@ -33,9 +33,11 @@
 }
 
 .contenedorGeneral {
+  width: 100vw;
   backdrop-filter: blur(5px);
   background-color: rgba(255, 255, 255, 0.75);
-  padding: 20px 20px;
+  padding: 20px 0;
+  position: relative;
 }
 
 html {
@@ -75,10 +77,14 @@ nav {
   backdrop-filter: blur(15px);
   background-color: rgba(158, 255, 255, 0.15);
 }
+nav label {
+  position: absolute;
+  right: 10px;
+}
 nav label img {
   width: 40px;
   height: 40px;
-  margin: 5px 10px;
+  margin: 5px 0;
 }
 nav ul {
   display: flex;
@@ -239,8 +245,12 @@ header section {
 }
 
 .portafolioContenedor {
-  max-width: 90%;
+  width: 100%;
+  height: 450px;
+  padding: 20px;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 .portafolioContenedor p {
   font-size: 30px;
@@ -271,12 +281,11 @@ h6 {
 }
 
 .proyectos {
+  height: 100%;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  gap: 20px;
-  flex-direction: row;
-  flex-wrap: wrap;
+  margin-left: -100%;
+  gap: 60px;
 }
 
 .proyecto {
@@ -288,10 +297,18 @@ h6 {
   width: 100%;
   height: 250px;
   border-radius: 25px;
-  position: relative;
   overflow: hidden;
+  position: relative;
 }
-.proyectoContenedor div {
+.proyectoContenedor:hover div {
+  opacity: 1;
+}
+.proyectoContenedor:hover div h5 {
+  bottom: 0;
+  opacity: 1;
+}
+
+.contenedorDescripcion {
   position: absolute;
   top: 0;
   width: 100%;
@@ -302,13 +319,6 @@ h6 {
   backdrop-filter: blur(10px);
   opacity: 0;
   transition: all 0.5s;
-}
-.proyectoContenedor:hover div {
-  opacity: 1;
-}
-.proyectoContenedor:hover div h5 {
-  bottom: 0;
-  opacity: 1;
 }
 
 .proyectoBotones {
@@ -391,6 +401,25 @@ h6 {
 }
 .btnGitHub:active {
   box-shadow: 0px 0px 10px;
+}
+
+.carouselBotones {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  top: 50%;
+  border-radius: 100px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.botonDerecho {
+  left: 20px;
+}
+
+.botonIzquierdo {
+  right: 20px;
 }
 
 .conocimietoImagen {
@@ -482,7 +511,7 @@ h6 {
 @media only screen and (max-width: 599px) {
   nav label {
     display: block;
-    width: 100%;
+    width: 50px;
     height: 50px;
   }
 
@@ -528,6 +557,33 @@ h6 {
     width: 60px;
     height: 60px;
   }
+
+  .proyecto {
+    width: 400px;
+    color: black;
+  }
+
+  .proyectoContenedor {
+    width: 100%;
+    height: 250px;
+  }
+
+  .botonDerecho {
+    left: 10px;
+  }
+
+  .botonIzquierdo {
+    right: 10px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .botonDerecho {
+    left: 15px;
+  }
+
+  .botonIzquierdo {
+    right: 15px;
+  }
 }
 @media only screen and (min-width: 600px) {
   nav label {
@@ -561,16 +617,6 @@ h6 {
     width: 60%;
   }
 
-  .proyecto {
-    width: 350px;
-    color: black;
-  }
-
-  .proyectoContenedor {
-    width: 100%;
-    height: 150px;
-  }
-
   .proyectoBotones a button img {
     width: 30px;
     margin: 5px;
@@ -579,13 +625,13 @@ h6 {
 }
 @media only screen and (min-width: 600px) and (max-width: 1399px) {
   .proyecto {
-    width: 375px;
+    width: 450px;
     color: black;
   }
 
   .proyectoContenedor {
     width: 100%;
-    height: 150px;
+    height: 250px;
   }
 
   .proyectoBotones a button img {

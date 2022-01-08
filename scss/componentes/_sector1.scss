@@ -17,8 +17,12 @@
   }
 }
 .portafolioContenedor {
-  max-width: 90%;
+  width: 100%;
+  height: 450px;
+  padding: 20px;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
   p {
     font-size: 30px;
   }
@@ -45,12 +49,11 @@ h6 {
   margin-top: 20px;
 }
 .proyectos {
+  height: 100%;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  gap: 20px;
-  flex-direction: row;
-  flex-wrap: wrap;
+  margin-left: -100%;
+  gap: 60px;
 }
 .proyecto {
   width: 600px;
@@ -61,20 +64,8 @@ h6 {
   width: 100%;
   height: 250px;
   border-radius: 25px;
-  position: relative;
   overflow: hidden;
-  div {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(10px);
-    opacity: 0;
-    transition: all 0.5s;
-  }
+  position: relative;
   &:hover div {
     opacity: 1;
   }
@@ -82,6 +73,18 @@ h6 {
     bottom: 0;
     opacity: 1;
   }
+}
+.contenedorDescripcion {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: all 0.5s;
 }
 .proyectoBotones {
   display: flex;
@@ -163,4 +166,20 @@ h6 {
   &:active {
     box-shadow: 0px 0px 10px;
   }
+}
+.carouselBotones {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  top: 50%;
+  border-radius: 100px;
+  cursor: pointer;
+  z-index: 10;
+}
+.botonDerecho {
+  left: 20px;
+}
+.botonIzquierdo {
+  right: 20px;
 }

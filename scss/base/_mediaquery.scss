@@ -1,7 +1,7 @@
 @media only screen and (max-width: 599px) {
   nav label {
     display: block;
-    width: 100%;
+    width: 50px;
     height: 50px;
   }
   nav {
@@ -44,8 +44,28 @@
     width: 60px;
     height: 60px;
   }
+  .proyecto {
+    width: 400px;
+    color: black;
+  }
+  .proyectoContenedor {
+    width: 100%;
+    height: 250px;
+  }
+  .botonDerecho {
+    left: 10px;
+  }
+  .botonIzquierdo {
+    right: 10px;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
+  .botonDerecho {
+    left: 15px;
+  }
+  .botonIzquierdo {
+    right: 15px;
+  }
 }
 @media only screen and (min-width: 600px) {
   nav label {
@@ -75,14 +95,6 @@
   .botonDescargarCV {
     width: 60%;
   }
-  .proyecto {
-    width: 350px;
-    color: black;
-  }
-  .proyectoContenedor {
-    width: 100%;
-    height: 150px;
-  }
   .proyectoBotones {
     a button {
       img {
@@ -101,12 +113,12 @@
 }
 @media only screen and (min-width: 600px) and (max-width: 1399px) {
   .proyecto {
-    width: 375px;
+    width: 450px;
     color: black;
   }
   .proyectoContenedor {
     width: 100%;
-    height: 150px;
+    height: 250px;
   }
   .proyectoBotones {
     a button {

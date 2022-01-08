@@ -9,7 +9,7 @@
   box-shadow: 0px 0px 15px;
 }
 %contenedorTipo2 {
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   backdrop-filter: blur(5px);
   background-color: rgba(0, 102, 255, 0.5);
@@ -19,7 +19,9 @@
   box-shadow: 0px 0px 15px;
 }
 .contenedorGeneral {
+  width: 100vw;
   backdrop-filter: blur(5px);
   background-color: rgba(255, 255, 255, 0.75);
-  padding: 20px 20px;
+  padding: 20px 0;
+  position: relative;
 }
