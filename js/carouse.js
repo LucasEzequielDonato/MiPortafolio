@@ -41,6 +41,6 @@ botonDerecho.addEventListener("click", function(){
     Anterior();
 });
 
-setInterval(function(){
+/*setInterval(function(){
     Siguiente();
-}, 5000);
+}, 5000);*/

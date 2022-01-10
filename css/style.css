@@ -21,8 +21,7 @@
   box-shadow: 0px 0px 15px;
 }
 
-.proyecto {
-  margin: 0 auto;
+.contenedorProyecto {
   text-align: center;
   backdrop-filter: blur(5px);
   background-color: rgba(0, 102, 255, 0.5);
@@ -244,12 +243,14 @@ header section {
 }
 
 .portafolioContenedor {
-  width: calc(100vw - 20px);
-  height: 450px;
-  padding: 20px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height: 500px;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
 }
 .portafolioContenedor p {
   font-size: 30px;
@@ -280,22 +281,32 @@ h6 {
 }
 
 .proyectos {
+  position: absolute;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: -100%;
-  gap: 40px;
+}
+
+.contenedorProyecto {
+  width: 600px;
+  height: 100%;
+  color: black;
 }
 
 .proyecto {
-  width: 600px;
-  color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .proyectoContenedor {
   width: 100%;
-  height: 250px;
+  height: calc(100% - 75px);
   border-radius: 25px;
   overflow: hidden;
   position: relative;
@@ -322,6 +333,7 @@ h6 {
 }
 
 .proyectoBotones {
+  height: 55px;
   display: flex;
   justify-content: space-evenly;
   margin-top: 20px;
@@ -408,7 +420,7 @@ h6 {
   width: 40px;
   height: 40px;
   background-color: white;
-  top: 50%;
+  top: calc(50% - 20px);
   border-radius: 100px;
   cursor: pointer;
   z-index: 10;
@@ -553,19 +565,17 @@ h6 {
     color: black;
   }
 
+  .portafolioContenedor {
+    height: 300px;
+  }
+
+  .contenedorProyecto {
+    width: 250px;
+  }
+
   .conocimietoImagen {
     width: 60px;
     height: 60px;
-  }
-
-  .proyecto {
-    width: 400px;
-    color: black;
-  }
-
-  .proyectoContenedor {
-    width: 100%;
-    height: 250px;
   }
 
   .botonDerecho {
@@ -574,6 +584,23 @@ h6 {
 
   .botonIzquierdo {
     right: 10px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .portafolioContenedor {
+    height: 400px;
+  }
+
+  .contenedorProyecto {
+    width: 400px;
+  }
+
+  .botonDerecho {
+    left: 15px;
+  }
+
+  .botonIzquierdo {
+    right: 15px;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -606,29 +633,6 @@ h6 {
 
   .botonDescargarCV {
     width: 60%;
-  }
-
-  .proyectoBotones a button img {
-    width: 30px;
-    margin: 5px;
-    z-index: 2;
-  }
-}
-@media only screen and (min-width: 600px) and (max-width: 1399px) {
-  .proyecto {
-    width: 450px;
-    color: black;
-  }
-
-  .proyectoContenedor {
-    width: 100%;
-    height: 250px;
-  }
-
-  .proyectoBotones a button img {
-    width: 30px;
-    margin: 5px;
-    z-index: 2;
   }
 }
 
