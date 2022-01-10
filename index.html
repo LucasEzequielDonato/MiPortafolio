@@ -27,7 +27,7 @@
 </head>
 <body>
     <div id="particles-js"></div>
-    <nav>
+    <nav id="menu">
         <input type="checkbox" id="botonMenu">
         <label for="botonMenu"><img src="multimedia/menu-outline.svg" alt="icono de menu"></label>
         <ul class="nav">
@@ -38,8 +38,8 @@
         </ul>
     </nav>
 
-    <header id="inicio">
-        <section data-aos="zoom-in">
+    <header id="inicio" class="seccion">
+        <section data-aos="zoom-in" id="1">
             <div class="headerContenedorPerfil">
                 <div>
                     <img src="./multimedia/Lucas-Donato.webp" alt="Foto de Lucas Donato" class="fotoPerfil">
@@ -54,14 +54,14 @@
         </section>
     </header>
 
-    <section class="seccionPrimera" id="portafolio">
-        <section>
+    <section class="seccionPrimera seccion" id="portafolio">
+        <section id="2">
             <div class="contenedorGeneral">
                 <h4>PROYECTOS</h4>
                 <div class="portafolioContenedor">
                     <div class="proyectos" id="carousel">
                         <div class="proyecto">
-                            <div class="contenedorProyecto">
+                            <div class="contenedorProyecto" onmouseover="NoRepetir()" onmouseout="Repetir()">
                                 <div class="proyectoContenedor">
                                     <img src="./multimedia/Proyecto1.webp" alt="" class="proyectoImagen">
                                     <div class="contenedorDescripcion">
@@ -75,7 +75,7 @@
                             </div>
                         </div>
                         <div class="proyecto">
-                            <div class="contenedorProyecto">
+                            <div class="contenedorProyecto" onmouseover="NoRepetir()" onmouseout="Repetir()">
                                 <div class="proyectoContenedor">
                                     <img src="./multimedia/Proyecto2.webp" alt="" class="proyectoImagen">
                                     <div class="contenedorDescripcion">
@@ -89,7 +89,7 @@
                             </div>
                         </div>
                         <div class="proyecto">
-                            <div class="contenedorProyecto">
+                            <div class="contenedorProyecto" onmouseover="NoRepetir()" onmouseout="Repetir()">
                                 <div class="proyectoContenedor">
                                     <img src="./multimedia/Proyecto3.webp" alt="" class="proyectoImagen">
                                     <div class="contenedorDescripcion">
@@ -114,39 +114,41 @@
         </section>
     </section>
 
-    <section class="seccionSegunda" id="conocimientos">
-        <section>
+    <section class="seccionSegunda seccion" id="conocimientos">
+        <section id="3">
             <div class="contenedorGeneral">
                 <h4>CONOCIMIENTOS</h4>
-                <div class="conocimientosContenedor">
-                    <div class="conocimiento">
-                        <img src="./multimedia/logo-python.svg" alt="" class="conocimietoImagen">
-                    </div>
-                    <div class="conocimiento">
-                        <img src="./multimedia/logo-html5.svg" alt="" class="conocimietoImagen">
-                    </div>
-                    <div class="conocimiento">
-                        <img src="./multimedia/logo-css3.svg" alt="" class="conocimietoImagen">
-                    </div>
-                    <div class="conocimiento">
-                        <img src="./multimedia/logo-nodejs.svg" alt="" class="conocimietoImagen">
-                    </div>
-                    <div class="conocimiento">
-                        <img src="./multimedia/logo-npm.svg" alt="" class="conocimietoImagen">
-                    </div>
-                    <div class="conocimiento">
-                        <img src="./multimedia/logo-sass.svg" alt="" class="conocimietoImagen">
-                    </div>
-                    <div class="conocimiento">
-                        <img src="./multimedia/logo-github.svg" alt="" class="conocimietoImagen">
+                <div class="carouselConocimientos">
+                    <div class="conocimientosContenedor" id="carouselConocimientos">
+                        <div class="conocimiento">
+                            <img src="./multimedia/logo-python.svg" alt="" class="conocimietoImagen">
+                        </div>
+                        <div class="conocimiento">
+                            <img src="./multimedia/logo-html5.svg" alt="" class="conocimietoImagen">
+                        </div>
+                        <div class="conocimiento">
+                            <img src="./multimedia/logo-css3.svg" alt="" class="conocimietoImagen">
+                        </div>
+                        <div class="conocimiento">
+                            <img src="./multimedia/logo-nodejs.svg" alt="" class="conocimietoImagen">
+                        </div>
+                        <div class="conocimiento">
+                            <img src="./multimedia/logo-npm.svg" alt="" class="conocimietoImagen">
+                        </div>
+                        <div class="conocimiento">
+                            <img src="./multimedia/logo-sass.svg" alt="" class="conocimietoImagen">
+                        </div>
+                        <div class="conocimiento">
+                            <img src="./multimedia/logo-github.svg" alt="" class="conocimietoImagen">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </section>
 
-    <footer class="seccionTres" id="contacto">
-        <section>
+    <footer class="seccionTres seccion" id="contacto">
+        <section id="4">
             <div class="contenedorFooter">
                 <h4 class="footerTexto">CONTACTAME POR:</h4>
                 <div class="contactoContenedor">
@@ -159,6 +161,7 @@
     </footer>
 
     <script src="js/carouse.js"></script>
+    <script src="js/carousel2.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="js/app.js"></script>

@@ -41,6 +41,15 @@ botonDerecho.addEventListener("click", function(){
     Anterior();
 });
 
-/*setInterval(function(){
-    Siguiente();
-}, 5000);*/
+let repetir = true;
+function NoRepetir () {
+    repetir = false;
+}
+function Repetir () {
+    repetir = true;
+}
+setInterval(function(){
+    if (repetir == true) {
+        Siguiente();
+    }
+}, 5000);

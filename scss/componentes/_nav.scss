@@ -46,3 +46,11 @@ nav {
     }
   }
 }
+#barraNavegacion {
+  width: 0px;
+  height: 7px;
+  background: #113cfc;
+  position: absolute;
+  bottom: 0;
+  transition: 0.3s ease-out all;
+}
