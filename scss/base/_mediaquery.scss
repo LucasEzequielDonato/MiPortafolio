@@ -37,7 +37,6 @@
     text-align: center;
     font-size: 30px;
     font-weight: 600;
-    margin-bottom: 20px;
     color: black;
   }
   .portafolioContenedor {
@@ -55,6 +54,20 @@
   }
   .botonIzquierdo {
     right: 10px;
+  }
+  .contactoContenedor {
+    display: block;
+    a {
+      display: block;
+      width: 50px;
+      height: 50px;
+      margin: 20px auto 0;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 899px) {
