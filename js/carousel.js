@@ -1,7 +1,7 @@
 const carousel = document.querySelector("#carousel");
 let carouselSeleccion = document.querySelectorAll(".proyecto");
 let carouselSeleccionUltima = carouselSeleccion[carouselSeleccion.length -1];
-console.log(carousel);
+
 const botonDerecho = document.querySelector("#botonDerecho");
 const botonIzquierdo = document.querySelector("#botonIzquierdo");
 
