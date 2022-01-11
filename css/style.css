@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 /* Importo la fuente principal */
 * {
   margin: 0;
@@ -6,7 +7,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -17,8 +18,7 @@
   background-color: rgba(255, 255, 255, 0.5);
   padding: 20px;
   border-radius: 50px;
-  border: 1px solid black;
-  box-shadow: 0px 0px 15px;
+  box-shadow: 0px 0px 50px;
 }
 
 .contenedorProyecto {
@@ -27,14 +27,14 @@
   background-color: rgba(0, 102, 255, 0.5);
   padding: 20px;
   border-radius: 50px;
-  border: 1px solid black;
-  box-shadow: 0px 0px 15px;
+  box-shadow: 0px 0px 20px;
 }
 
 .contenedorGeneral {
   width: 100%;
   backdrop-filter: blur(5px);
   background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 0px 20px white;
   padding: 20px 0;
 }
 
@@ -177,12 +177,14 @@ header section {
   margin: 20px 0 20px 0;
   font-size: 50px;
   font-weight: bolder;
+  text-shadow: 5px 5px 5px #505050;
 }
 .headerContenedorPerfil h2,
 .headerContenedorPerfil h3 {
   margin: 0 0 20px 0;
   font-size: 20px;
   font-weight: bolder;
+  text-shadow: 5px 5px 5px #505050;
 }
 .headerContenedorPerfil:hover {
   background-color: rgba(255, 255, 255, 0.75);
@@ -272,6 +274,7 @@ h4 {
   font-weight: 600;
   margin-bottom: 20px;
   color: black;
+  text-shadow: 5px 5px 5px #505050;
 }
 
 h5 {
@@ -288,6 +291,7 @@ h5 {
 
 h6 {
   margin-top: 20px;
+  text-shadow: 5px 5px 5px #505050;
 }
 
 .proyectos {
@@ -364,7 +368,7 @@ h6 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 100%;
+  width: 105px;
   border: none;
   cursor: pointer;
   transition: 0.3s ease all;
@@ -383,7 +387,7 @@ h6 {
   left: calc(-100% - 80px);
   border-bottom: 60px solid #99ff00;
   border-right: 60px solid transparent;
-  transition: 0.4s ease-in-out all;
+  transition: 0.3s ease-in-out all;
 }
 .btnDemo:hover::after {
   left: 0;
@@ -397,7 +401,7 @@ h6 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 100%;
+  width: 105px;
   border: none;
   cursor: pointer;
   transition: 0.3s ease all;
@@ -476,6 +480,7 @@ h6 {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
+  padding: 0 20px;
 }
 .conocimientosContenedor div {
   background-color: white;
