@@ -19,4 +19,4 @@ function Siguiente2() {
 
 setInterval(function(){
     Siguiente2();
-}, 5000);
+}, 600);
