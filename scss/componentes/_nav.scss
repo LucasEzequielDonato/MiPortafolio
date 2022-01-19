@@ -26,8 +26,9 @@ nav {
     li {
       width: 25%;
       height: 100%;
+      transition: all 0.25s;
       &:hover {
-        background-color: rgb(158, 255, 255, 0.25);
+        background-color: rgb(158, 255, 255, 0.55);
       }
       a {
         width: 100%;

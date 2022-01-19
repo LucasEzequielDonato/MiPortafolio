@@ -1,11 +1,16 @@
-.contactoImagen {
+.contactoIcono {
   width: 100px;
   height: 250px;
-  filter: invert(1);
+  color: white;
+  transition: all 0.25s;
 }
 .contenedorFooter {
   background-color: rgba(0, 0, 0, 0.75);
   padding: 20px 0;
+  transition: all 0.25s;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
 }
 .footerTexto {
   color: rgb(220, 220, 220);
@@ -24,5 +29,15 @@
     &:hover {
       transform: scale(1.3);
     }
+  }
+}
+.cambiarAAzul {
+  &:hover {
+    color: rgb(0, 0, 255);
+  }
+}
+.cambiarAVerde {
+  &:hover {
+    color: rgb(173, 255, 47);
   }
 }
