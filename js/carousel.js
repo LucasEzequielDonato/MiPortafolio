@@ -33,6 +33,15 @@ function Anterior() {
     }, 500);
 }
 
+function NoRepetir () {
+    repetir = false;
+    console.log("Se paro el carousel");
+}
+function Repetir () {
+    repetir = true;
+    console.log("Sigue el carousel");
+}
+
 botonIzquierdo.addEventListener('click', function(){
     Siguiente();
 });
@@ -40,14 +49,14 @@ botonIzquierdo.addEventListener('click', function(){
 botonDerecho.addEventListener("click", function(){
     Anterior();
 });
-
+const proyectos = document.querySelectorAll(".proyecto");
+console.log(proyectos);
+for (let index = 0; index < proyectos.length; index++) {
+    console.log(proyectos[index]);
+    proyectos[index].addEventListener("mouseover", NoRepetir);
+    proyectos[index].addEventListener("mouseout", Repetir);
+};
 let repetir = true;
-function NoRepetir () {
-    repetir = false;
-}
-function Repetir () {
-    repetir = true;
-}
 setInterval(function(){
     if (repetir == true) {
         Siguiente();
