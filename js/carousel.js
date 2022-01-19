@@ -48,8 +48,8 @@ function NoRepetir () {
 function Repetir () {
     repetir = true;
 }
-/*setInterval(function(){
+setInterval(function(){
     if (repetir == true) {
         Siguiente();
     }
-}, 5000);*/
+}, 5000);
