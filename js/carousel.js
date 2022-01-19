@@ -35,26 +35,30 @@ function Anterior() {
 
 function NoRepetir () {
     repetir = false;
-    console.log("Se paro el carousel");
+    console.log("Se paro");
 }
 function Repetir () {
     repetir = true;
-    console.log("Sigue el carousel");
+    console.log("No se paro");
 }
 
 botonIzquierdo.addEventListener('click', function(){
+    NoRepetir();
     Siguiente();
+    setTimeout(Repetir, 5000);
 });
 
 botonDerecho.addEventListener("click", function(){
+    NoRepetir();
     Anterior();
+    setTimeout(Repetir, 5000);
 });
-const proyectos = document.querySelectorAll(".proyecto");
+const proyectos = document.querySelectorAll(".contenedorProyecto");
 console.log(proyectos);
 for (let index = 0; index < proyectos.length; index++) {
     console.log(proyectos[index]);
-    proyectos[index].addEventListener("mouseover", NoRepetir);
-    proyectos[index].addEventListener("mouseout", Repetir);
+    proyectos[index].addEventListener("mouseenter", NoRepetir);
+    proyectos[index].addEventListener("mouseleave", Repetir);
 };
 let repetir = true;
 setInterval(function(){
