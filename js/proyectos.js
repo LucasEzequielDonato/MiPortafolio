@@ -6,7 +6,7 @@ class Proyecto {
         this.enlacePag = enlacePag;
     }
 }
-function visualizarProyectos () {
+function visualizarProyectos (carousel) {
     const contenedorProyectos = document.getElementById("carousel");
     proyectos.forEach((proyecto) => {
         let contenedorProyecto = document.createElement("div");
@@ -29,6 +29,7 @@ function visualizarProyectos () {
     })
     let ancho = 100 * proyectos.length;
     contenedorProyectos.style.width = `${ancho}%`;
+    carousel();
 }
 const proyectos = [];
 const proyecto1 = new Proyecto ("Sitio web para una inmobiliaria", "./multimedia/Proyecto1.webp", "https://lucasezequieldonato.github.io/NestorDonato", "https://github.com/LucasEzequielDonato/NestorDonato");
@@ -36,4 +37,4 @@ const proyecto2 = new Proyecto ("Sitio web para un local de pestañas", "./multi
 const proyecto3 = new Proyecto ("Sitio web para un local de porcelana", "./multimedia/Proyecto3.webp", "https://lucasezequieldonato.github.io/PorcelanaRo", "https://github.com/LucasEzequielDonato/PorcelanaRo");
 const proyecto4 = new Proyecto ("Este sitio web", "./multimedia/Proyecto4.webp", "https://lucasezequieldonato.github.io/MiPortafolio", "https://github.com/LucasEzequielDonato/MiPortafolio");
 proyectos.push(proyecto1, proyecto2, proyecto3, proyecto4);
-visualizarProyectos();
+visualizarProyectos(crearCarousel);
