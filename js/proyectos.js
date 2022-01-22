@@ -23,8 +23,8 @@ function visualizarProyectos () {
                 </div>
             </div>
             <div class="proyectoBotones">
-                <a href="${proyecto.enlaceRepo}" target="_blank" rel="noopener"><button class="btnDemo"><ion-icon name="file-tray-full-outline"></ion-icon><span>REPO</span></button></a>
-                <a href="${proyecto.enlacePag}" target="_blank" rel="noopener"><button class="btnGitHub"><ion-icon name="logo-github"></ion-icon><span>GITHUB</span></button></a>
+                <a href="${proyecto.enlaceRepo}" target="_blank" rel="noopener"><button class="btnDemo"><ion-icon name="file-tray-full-outline"></ion-icon><p>REPO</p></button></a>
+                <a href="${proyecto.enlacePag}" target="_blank" rel="noopener"><button class="btnGitHub"><ion-icon name="logo-github"></ion-icon><p>GITHUB</p></button></a>
             </div>
         </div>
         `;

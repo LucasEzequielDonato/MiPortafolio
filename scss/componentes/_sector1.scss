@@ -88,18 +88,18 @@ h6 {
   backdrop-filter: blur(5px);
 }
 .proyectoBotones {
-  height: 55px;
   display: flex;
   justify-content: space-evenly;
   margin-top: 20px;
   a button {
+    width: 180px;
     ion-icon {
       width: 30px;
       height: 30px;
       margin: 5px;
       z-index: 2;
     }
-    span {
+    p {
       margin: 5px;
       z-index: 2;
       font-weight: bolder;
@@ -111,7 +111,6 @@ h6 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 105px;
   border: none;
   cursor: pointer;
   transition: 0.3s ease all;
@@ -146,7 +145,6 @@ h6 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 105px;
   border: none;
   cursor: pointer;
   transition: 0.3s ease all;

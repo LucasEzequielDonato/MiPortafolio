@@ -20,7 +20,7 @@
           background-color: rgb(158, 255, 255, 0.75);
         }
         a {
-          span {
+          p {
             font-size: 15px;
           }
         }
@@ -38,6 +38,16 @@
   }
   .contenedorProyecto {
     width: 250px;
+  }
+  .proyectoBotones a button {
+    width: 100px;
+    ion-icon {
+      width: 20px;
+      height: 20px;
+    }
+    p {
+      font-size: 10px;
+    }
   }
   .conocimietoImagen {
     width: 60px;
@@ -69,7 +79,17 @@
     height: 400px;
   }
   .contenedorProyecto {
-    width: 400px;
+    width: 430px;
+  }
+  .proyectoBotones a button {
+    width: 125px;
+    ion-icon {
+      width: 25px;
+      height: 25px;
+    }
+    p {
+      font-size: 15px;
+    }
   }
   .botonDerecho {
     left: 15px;

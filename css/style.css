@@ -124,7 +124,7 @@ nav ul li a {
   text-align: center;
   text-decoration: none;
 }
-nav ul li a span {
+nav ul li a p {
   font-size: 20px;
   font-weight: bolder;
   color: black;
@@ -237,7 +237,7 @@ nav ul li a span {
   height: 30px;
   z-index: 2;
 }
-.botonDescargarCV span {
+.botonDescargarCV p {
   z-index: 2;
   font-weight: bolder;
 }
@@ -341,10 +341,12 @@ h6 {
 }
 
 .proyectoBotones {
-  height: 55px;
   display: flex;
   justify-content: space-evenly;
   margin-top: 20px;
+}
+.proyectoBotones a button {
+  width: 180px;
 }
 .proyectoBotones a button ion-icon {
   width: 30px;
@@ -352,7 +354,7 @@ h6 {
   margin: 5px;
   z-index: 2;
 }
-.proyectoBotones a button span {
+.proyectoBotones a button p {
   margin: 5px;
   z-index: 2;
   font-weight: bolder;
@@ -363,7 +365,6 @@ h6 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 105px;
   border: none;
   cursor: pointer;
   transition: 0.3s ease all;
@@ -399,7 +400,6 @@ h6 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 105px;
   border: none;
   cursor: pointer;
   transition: 0.3s ease all;
@@ -572,7 +572,7 @@ h6 {
   nav ul li:hover {
     background-color: rgba(158, 255, 255, 0.75);
   }
-  nav ul li a span {
+  nav ul li a p {
     font-size: 15px;
   }
 
@@ -589,6 +589,17 @@ h6 {
 
   .contenedorProyecto {
     width: 250px;
+  }
+
+  .proyectoBotones a button {
+    width: 100px;
+  }
+  .proyectoBotones a button ion-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .proyectoBotones a button p {
+    font-size: 10px;
   }
 
   .conocimietoImagen {
@@ -625,7 +636,18 @@ h6 {
   }
 
   .contenedorProyecto {
-    width: 400px;
+    width: 430px;
+  }
+
+  .proyectoBotones a button {
+    width: 125px;
+  }
+  .proyectoBotones a button ion-icon {
+    width: 25px;
+    height: 25px;
+  }
+  .proyectoBotones a button p {
+    font-size: 15px;
   }
 
   .botonDerecho {
