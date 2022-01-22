@@ -1,3 +1,4 @@
+// Clase con todo lo que debe tener un proyecto.
 class Proyecto {
     constructor (titulo, foto, enlaceRepo, enlacePag) {
         this.titulo = titulo;
@@ -6,7 +7,9 @@ class Proyecto {
         this.enlacePag = enlacePag;
     }
 }
-function visualizarProyectos (carousel) {
+
+// Funcion para cargar todos los proyectos dentro del carousel del sitio web.
+function visualizarProyectos () {
     const contenedorProyectos = document.getElementById("carousel");
     proyectos.forEach((proyecto) => {
         let contenedorProyecto = document.createElement("div");
@@ -20,16 +23,14 @@ function visualizarProyectos (carousel) {
                 </div>
             </div>
             <div class="proyectoBotones">
-                <a href="${proyecto.enlaceRepo}" target="_blank" rel="noopener"><button class="btnDemo"><ion-icon name="globe-outline"></ion-icon><span>DEMO</span></button></a>
+                <a href="${proyecto.enlaceRepo}" target="_blank" rel="noopener"><button class="btnDemo"><ion-icon name="file-tray-full-outline"></ion-icon><span>REPO</span></button></a>
                 <a href="${proyecto.enlacePag}" target="_blank" rel="noopener"><button class="btnGitHub"><ion-icon name="logo-github"></ion-icon><span>GITHUB</span></button></a>
             </div>
         </div>
         `;
         contenedorProyectos.appendChild(contenedorProyecto);
     })
-    let ancho = 100 * proyectos.length;
-    contenedorProyectos.style.width = `${ancho}%`;
-    carousel();
+    crearCarousel();
 }
 const proyectos = [];
 const proyecto1 = new Proyecto ("Sitio web para una inmobiliaria", "./multimedia/Proyecto1.webp", "https://lucasezequieldonato.github.io/NestorDonato", "https://github.com/LucasEzequielDonato/NestorDonato");
